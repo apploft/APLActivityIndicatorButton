@@ -1,5 +1,5 @@
 //
-//  ActivityIndicatorButton.swift
+//  APLActivityIndicatorButton.swift
 //  BPI
 //
 //  Created by Famara Kassama on 04.07.19.
