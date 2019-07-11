@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-protocol Animatable {
+public protocol Animatable {
     func startAnimating()
     func stopAnimating()
 }
 
-class APLActivityIndicatorButton: UIView, Animatable {
-    var button: UIButton {
+public class APLActivityIndicatorButton: UIView, Animatable {
+    open var button: UIButton {
         willSet {
             button.removeFromSuperview()
         }
@@ -66,7 +66,7 @@ class APLActivityIndicatorButton: UIView, Animatable {
         button.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     }
 
-    func startAnimating() {
+    public func startAnimating() {
         isAnimating = true
 
         if let attributedTitle = button.attributedTitle(for: UIControl.State()) {
@@ -80,7 +80,7 @@ class APLActivityIndicatorButton: UIView, Animatable {
         self.activityIndicator.startAnimating()
     }
 
-    func stopAnimating() {
+    public func stopAnimating() {
         self.activityIndicator.stopAnimating()
 
         if attributedButtonTitle != nil {
