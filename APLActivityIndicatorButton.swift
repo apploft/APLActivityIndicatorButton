@@ -14,7 +14,7 @@ protocol Animatable {
     func stopAnimating()
 }
 
-class ActivityIndicatorButton: UIView, Animatable {
+class APLActivityIndicatorButton: UIView, Animatable {
     var button: UIButton {
         willSet {
             button.removeFromSuperview()
