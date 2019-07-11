@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   
   s.author       = "Famara Kassama"
   
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "11.0"
 
   s.source       = { :git => "https://github.com/apploft/APLActivityIndicatorButton.git", :tag => s.version.to_s }
 
