@@ -24,7 +24,7 @@ public class APLActivityIndicatorButton: UIView, Animatable {
         }
     }
 
-    private(set) var isAnimating: Bool = false
+    public private(set) var isAnimating: Bool = false
 
     private lazy var activityIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView()
